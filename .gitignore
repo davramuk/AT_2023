@@ -1,7 +1,6 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/AT
 target/
 pom.xml.tag
 pom.xml.releaseBackup
