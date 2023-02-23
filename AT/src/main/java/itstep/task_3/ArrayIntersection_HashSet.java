@@ -35,5 +35,26 @@ public class ArrayIntersection_HashSet {
         for (int i = 0; i < sizeArr2; i++) {
             arr2[i] = scan.nextInt();
         }
+
+// Realization of intersection of two arrays
+        List<Integer> intersection = new ArrayList<Integer>();
+        for (int i = 0; i < sizeArr1; i++) {
+            for (int j = 0; j < sizeArr2; j++) {
+                if (arr1[i] == arr2[j]) {
+                    intersection.add(arr1[i]);
+                    break;
+                }
+            }
+        }
+
+// Output
+        if (intersection.size() == 0) {
+            System.out.println("There are no common elements between this two arrays");
+        } else {
+            System.out.print("The common elements are: ");
+            for (int i = 0; i < intersection.size(); i++) {
+                System.out.print(intersection.get(i) + " ");
+            }
+        }
     }
 }
